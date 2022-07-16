@@ -1,0 +1,8 @@
+body,
+.contact-area {
+    height: 100vh!important;
+}
+
+.hidden {
+    display: none!important;
+}

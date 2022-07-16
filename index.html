@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/sweetalert2.min.css" rel="stylesheet">
+    <link href="./assets/css/default.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./assets/css/responsive.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <title>Tarkov Flea Bot</title>
+  </head>
+  <body>
+    <section class="contact-area black-bg">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-6">
+                  <div class="contact-wrap">
+                      <div class="contact-title">
+                          <h2 class="title"><span id="userTitle">Hi</span></h2>
+                          <p id="licTitle">Enter you lic key</p>
+                      </div>
+                      <form action="#" class="contact-form" id="licForm">
+                          <div class="form-grp">
+                              <label for="name">Your Lic Key <span>*</span></label>
+                              <input type="text" id="lickey" name="lickey" placeholder="...">
+                          </div>
+                          
+                          <button type="button" class="btn" id="send">next</button>
+                      </form>
+                      <div class="hidden" id="botButton">
+                        <button type="button" class="btn" id="start">START</button>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </section>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/licPage.js"></script>
+  </body>
+</html>
